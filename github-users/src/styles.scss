@@ -1,0 +1,21 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+ul{
+  padding-left: 0
+}
+
+li{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+a{
+  &:focus{
+    outline: none
+  }
+}

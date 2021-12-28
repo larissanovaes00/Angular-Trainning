@@ -1,0 +1,29 @@
+<div class="card-container">
+  <div (click)="openDialog()">
+    <img
+      src="{{ user.avatar_url }}"
+      alt="{{ user.login }}-avatar"
+      class="image-avatar"
+    />
+    <div class="information-container">
+      <div class="username">
+        {{ user.login }}
+      </div>
+      <div>
+        <i>
+          <img src="../../../assets/icon-heart.svg" alt="repositories" />
+        </i>
+        {{ user.repos_url.length }}
+      </div>
+      <div>
+        <i>
+          <img src="../../../assets/icon-eye.svg" alt="followes" />
+        </i>
+        {{ user.followers_url.length }}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

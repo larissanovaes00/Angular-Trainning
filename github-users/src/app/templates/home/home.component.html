@@ -1,0 +1,18 @@
+<div class="container mt-5 mb-5 pb-5">
+  <ul class="d-flex flex-wrap">
+    <li class="col-3 cards p-3" *ngFor="let user of usersSlice">
+      <app-card-user [user]="user"></app-card-user>
+    </li>
+  </ul>
+  <mat-paginator
+    (page)="onPageChange($event)"
+    [length]="length"
+    [pageSize]="pageSize"
+    [showFirstLastButtons]="showFirstLastButtons"
+    [pageSizeOptions]="pageSizeOptions"
+    [pageIndex]="pageIndex"
+    aria-label="Select page"
+    class="paginator"
+  >
+  </mat-paginator>
+</div>

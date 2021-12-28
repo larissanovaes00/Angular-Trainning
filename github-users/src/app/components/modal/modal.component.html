@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>{{data.login}}</h1>
+<div mat-dialog-content>
+  <p>Repositories: {{data.repos_url.length}}</p>
+</div>
+
+<div mat-dialog-actions>
+  <a href={{data.html_url}} class="btn btn-primary" mat-button target="_blank" style="margin-right: 16px">View profile</a>
+  <button class="btn btn-light" mat-button (click)="cancel()" >Close</button>
+</div>
